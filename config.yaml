@@ -2,6 +2,7 @@ baseURL: https://developers.yoyodesign.com/
 enableGitInfo: true
 enableRobotsTXT: true
 languageCode: en-gb
+paginate: 2
 title: Yoyo developers blog
 theme: yoyo-developers-blog
 
@@ -10,3 +11,4 @@ permalinks:
 
 params:
   description: Insight from the Yoyo development team.
+  dateFormat: 2006-01-02

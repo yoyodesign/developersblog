@@ -1,15 +1,32 @@
 {{- define "main" -}}
 
-<h1>{{ .Name }}</h1>
+{{ $paginator := .Paginate (where .Pages.ByPublishDate "Section" "post") }}
 
-{{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
-<p>
-	<a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
-	{{ $customDateFormat := "January 2, 2006" }}
+<ul>
+	{{ range $paginator.Pages }}
+	<li>
+		<a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+		<small>{{ .PublishDate.Format .Site.Params.dateFormat }}</small>
+	</li>
+	{{ end }}
+</ul>
 
-	{{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
-	<small>{{ .PublishDate.Format $customDateFormat }}</small>
-</p>
-{{ end }}
+{{ template "_internal/pagination.html" . }}
+
+<style>
+	.pagination {
+		display: flex;
+		list-style: none;
+	}
+
+	.page-item {
+		margin: 0 8pt;
+	}
+
+		.page-item.disabled {
+			pointer-events: none;
+			opacity: 0.5;
+		}
+</style>
 
 {{- end -}}

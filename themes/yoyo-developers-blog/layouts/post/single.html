@@ -4,9 +4,7 @@
 
 <p>
 	<small>
-		{{ $customDateFormat := "January 2, 2006" }}
-		{{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
-		{{ .PublishDate.Format $customDateFormat }}{{ if gt .Lastmod .PublishDate }}, last updated {{ .Lastmod.Format $customDateFormat }}{{ end }}
+		{{ .PublishDate.Format .Site.Params.dateFormat }}{{ if gt .Lastmod .PublishDate }}, last updated {{ .Lastmod.Format .Site.Params.dateFormat }}{{ end }}
 	</small>
 </p>
 
