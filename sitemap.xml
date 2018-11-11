@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/fourth-post/</loc>
+    <lastmod>2018-11-11T17:44:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/third-post/</loc>
+    <lastmod>2018-11-11T17:33:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/second-post/</loc>
+    <lastmod>2018-11-11T17:33:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/welcome/</loc>
+    <lastmod>2018-11-11T17:33:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/404/</loc>
+    <lastmod>2018-11-11T17:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/post/</loc>
+    <lastmod>2018-11-11T17:44:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://developers.yoyodesign.com/</loc>
+    <lastmod>2018-11-11T17:44:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
