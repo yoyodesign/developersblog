@@ -1,0 +1,15 @@
+{{- define "main" -}}
+
+<h1>{{ .Name }}</h1>
+
+{{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
+<p>
+	<a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+	{{ $customDateFormat := "January 2, 2006" }}
+
+	{{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
+	<small>{{ .PublishDate.Format $customDateFormat }}</small>
+</p>
+{{ end }}
+
+{{- end -}}

@@ -1,0 +1,12 @@
+baseURL: https://developers.yoyodesign.com/
+enableGitInfo: true
+enableRobotsTXT: true
+languageCode: en-gb
+title: Yoyo developers blog
+theme: yoyo-developers-blog
+
+permalinks:
+  post: /:filename/
+
+params:
+  description: Insight from the Yoyo development team.
