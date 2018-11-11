@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Yoyo developers blog</title>
-    <link>https://developers.yoyodesign.com/post/</link>
+    <link>https://yoyodesign.github.io/developersblog/post/</link>
     <description>Recent content in Posts on Yoyo developers blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 11 Nov 2018 17:43:20 +0000</lastBuildDate>
     
-	<atom:link href="https://developers.yoyodesign.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoyodesign.github.io/developersblog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>fourth post</title>
-      <link>https://developers.yoyodesign.com/fourth-post/</link>
+      <link>https://yoyodesign.github.io/developersblog/fourth-post/</link>
       <pubDate>Sun, 11 Nov 2018 17:43:20 +0000</pubDate>
       
-      <guid>https://developers.yoyodesign.com/fourth-post/</guid>
+      <guid>https://yoyodesign.github.io/developersblog/fourth-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Third post</title>
-      <link>https://developers.yoyodesign.com/third-post/</link>
+      <link>https://yoyodesign.github.io/developersblog/third-post/</link>
       <pubDate>Sun, 11 Nov 2018 17:18:03 +0000</pubDate>
       
-      <guid>https://developers.yoyodesign.com/third-post/</guid>
+      <guid>https://yoyodesign.github.io/developersblog/third-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Second post</title>
-      <link>https://developers.yoyodesign.com/second-post/</link>
+      <link>https://yoyodesign.github.io/developersblog/second-post/</link>
       <pubDate>Sun, 11 Nov 2018 17:17:57 +0000</pubDate>
       
-      <guid>https://developers.yoyodesign.com/second-post/</guid>
+      <guid>https://yoyodesign.github.io/developersblog/second-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welcome</title>
-      <link>https://developers.yoyodesign.com/welcome/</link>
+      <link>https://yoyodesign.github.io/developersblog/welcome/</link>
       <pubDate>Sun, 11 Nov 2018 17:00:57 +0000</pubDate>
       
-      <guid>https://developers.yoyodesign.com/welcome/</guid>
+      <guid>https://yoyodesign.github.io/developersblog/welcome/</guid>
       <description>Welcome to the Yoyo developers blog (name TBC).</description>
     </item>
     
