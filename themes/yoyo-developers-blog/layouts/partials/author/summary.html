@@ -4,7 +4,7 @@
 
 	<ul>
 		{{ range . }}
-		{{ with $.Site.GetPage (printf "/author/%s" .) }}
+		{{ with $.Site.GetPage (printf "/authors/%s" .) }}
 		<li>
 			<p>
 				<a href="{{ .Permalink }}">{{ .Params.name }}</a>

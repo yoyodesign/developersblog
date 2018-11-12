@@ -6,7 +6,6 @@ lastmod: 2018-11-12
 draft: true
 authors:
   - calvin-davis
-  - tom-alfie-gaskill
 categories:
   - TIL
 tags:
