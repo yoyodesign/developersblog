@@ -5,7 +5,7 @@
 <ul>
 	{{ range $paginator.Pages }}
 	<li>
-		<a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+		<a href="{{ .Permalink }}">{{ .Title | markdownify }}!</a>
 		<small>{{ .PublishDate.Format .Site.Params.dateFormat }}</small>
 	</li>
 	{{ end }}
