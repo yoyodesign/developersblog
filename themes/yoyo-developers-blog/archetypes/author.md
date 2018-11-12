@@ -1,6 +1,5 @@
 ---
-name: "{{ replace .Name "-" " " }}"
+name: "{{ .Name | humanize }}"
 title: ""
 summary: ""
-draft: true
 ---
