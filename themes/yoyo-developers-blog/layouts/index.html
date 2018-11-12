@@ -1,6 +1,6 @@
 {{- define "main" -}}
 
-{{ $paginator := .Paginate (where .Pages.ByPublishDate "Section" "post") }}
+{{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse "Section" "post") }}
 
 <ul>
 	{{ range $paginator.Pages }}
