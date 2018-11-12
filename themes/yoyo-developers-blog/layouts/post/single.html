@@ -2,6 +2,20 @@
 
 <h1>{{ .Title | markdownify }}</h1>
 
+{{ with .Site.Taxonomies.authors }}
+<div>
+	<h2>Authors</h2>
+
+	<ul>
+		{{ range $taxonomyName, $taxonomy := . }}
+		<li>
+			<a href="{{ $taxonomyName | urlize }}">{{ $taxonomyName }}</a>
+		</li>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}
+
 <p>
 	<small>
 		{{ .PublishDate.Format .Site.Params.dateFormat }}{{ if gt .Lastmod .PublishDate }}, last updated {{ .Lastmod.Format .Site.Params.dateFormat }}{{ end }}
