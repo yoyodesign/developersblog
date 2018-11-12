@@ -8,9 +8,6 @@
 		{{ with .Site.Params.description }}
 		<meta name="description" content="{{ . }}">
 		{{ end }}
-
-		{{ $css := resources.Get "index.css" | minify | fingerprint }}
-		<link rel="stylesheet" href="{{ $css.Permalink }}">
 	</head>
 
 	<body>
