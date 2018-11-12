@@ -12,3 +12,8 @@ permalinks:
 params:
   description: Insight from the Yoyo development team.
   dateFormat: 2006-01-02
+
+taxonomies:
+  author: authors
+  category: categories
+  tag: tags
