@@ -16,7 +16,7 @@
 
 				{{ with .Params.summary }}
 				<br />
-				<span>{{ . }}</span>
+				<span>{{ . | markdownify }}</span>
 				{{ end }}
 			</p>
 		</li>
