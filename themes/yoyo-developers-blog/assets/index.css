@@ -1,0 +1,22 @@
+body {
+	margin: 0.5rem;
+}
+
+main {
+	max-width: 64rem;
+}
+
+.pagination {
+	display: flex;
+	list-style: none;
+}
+
+.page-item {
+	margin: 0 0.5rem;
+}
+
+	.page-item.disabled {
+		cursor: not-allowed;
+		pointer-events: none;
+		opacity: 0.5;
+	}

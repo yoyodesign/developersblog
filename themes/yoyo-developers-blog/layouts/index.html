@@ -13,20 +13,4 @@
 
 {{ template "_internal/pagination.html" . }}
 
-<style>
-	.pagination {
-		display: flex;
-		list-style: none;
-	}
-
-	.page-item {
-		margin: 0 8pt;
-	}
-
-		.page-item.disabled {
-			pointer-events: none;
-			opacity: 0.5;
-		}
-</style>
-
 {{- end -}}
