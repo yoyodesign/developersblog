@@ -8,15 +8,12 @@
 		{{ with .Site.Params.description }}
 		<meta name="description" content="{{ . }}">
 		{{ end }}
-
-		{{ $css := resources.Get "index.css" | minify | fingerprint }}
-		<link rel="stylesheet" href="{{ $css.Permalink }}">
 	</head>
 
 	<body>
 		<header>
 			<p>
-				<a href="{{ .Site.BaseURL }}">Yoyo developers blog</a>
+				<a href="{{ .Site.Home.Permalink }}">Yoyo developers blog</a>
 			</p>
 		</header>
 

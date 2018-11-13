@@ -1,0 +1,27 @@
+{{ with .Params.authors }}
+<div>
+	<h2>Author(s)</h2>
+
+	<ul>
+		{{ range . }}
+		{{ with $.Site.GetPage (printf "/authors/%s" .) }}
+		<li>
+			<p>
+				<a href="{{ .Permalink }}">{{ .Params.name }}</a>
+
+				{{ with .Params.title }}
+				<br />
+				<small>{{ . }}</small>
+				{{ end }}
+
+				{{ with .Params.summary }}
+				<br />
+				<span>{{ . | markdownify }}</span>
+				{{ end }}
+			</p>
+		</li>
+		{{ end }}
+		{{ end }}
+	</ul>
+</div>
+{{ end }}
