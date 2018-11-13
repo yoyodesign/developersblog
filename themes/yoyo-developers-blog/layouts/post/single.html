@@ -2,6 +2,8 @@
 
 <h1>{{ .Title | markdownify }}</h1>
 
+{{ partial "author/summary.html" . }}
+
 <p>
 	<small>
 		{{ .PublishDate.Format .Site.Params.dateFormat }}{{ if gt .Lastmod .PublishDate }}, last updated {{ .Lastmod.Format .Site.Params.dateFormat }}{{ end }}
