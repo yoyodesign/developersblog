@@ -6,36 +6,20 @@
     <description>Recent content in Posts on Yoyo developers blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 11 Nov 2018 17:43:20 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Nov 2018 16:29:34 +0000</lastBuildDate>
     
 	<atom:link href="https://yoyodesign.github.io/developersblog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>fourth post</title>
-      <link>https://yoyodesign.github.io/developersblog/fourth-post/</link>
-      <pubDate>Sun, 11 Nov 2018 17:43:20 +0000</pubDate>
+      <title>TIL: Default values when destructuring (ES6)</title>
+      <link>https://yoyodesign.github.io/developersblog/til-default-values-when-destructuring/</link>
+      <pubDate>Mon, 12 Nov 2018 16:29:34 +0000</pubDate>
       
-      <guid>https://yoyodesign.github.io/developersblog/fourth-post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Third post</title>
-      <link>https://yoyodesign.github.io/developersblog/third-post/</link>
-      <pubDate>Sun, 11 Nov 2018 17:18:03 +0000</pubDate>
-      
-      <guid>https://yoyodesign.github.io/developersblog/third-post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Second post</title>
-      <link>https://yoyodesign.github.io/developersblog/second-post/</link>
-      <pubDate>Sun, 11 Nov 2018 17:17:57 +0000</pubDate>
-      
-      <guid>https://yoyodesign.github.io/developersblog/second-post/</guid>
-      <description></description>
+      <guid>https://yoyodesign.github.io/developersblog/til-default-values-when-destructuring/</guid>
+      <description>Today I learnt that you can specify default values when destructuring arrays or objects.
+I&amp;rsquo;ve been using desctructuring for a short time now, often using it to create variables from comma-separated values in strings.
+const arr = &amp;#34;calvin,mark,davis&amp;#34;.split(&amp;#34;,&amp;#34;); const [ first, middle, last ] = arr; // first = &amp;#34;calvin&amp;#34; // middle = &amp;#34;mark&amp;#34; // last = &amp;#34;davis&amp;#34;  One day it occured to me that because this is variable assignment, perhaps default values would work here.</description>
     </item>
     
     <item>
@@ -44,7 +28,7 @@
       <pubDate>Sun, 11 Nov 2018 17:00:57 +0000</pubDate>
       
       <guid>https://yoyodesign.github.io/developersblog/welcome/</guid>
-      <description>Welcome to the Yoyo developers blog (name TBC).</description>
+      <description>Welcome to the Yoyo developers blog. Yes, it&amp;rsquo;s supposed to look like this!</description>
     </item>
     
   </channel>

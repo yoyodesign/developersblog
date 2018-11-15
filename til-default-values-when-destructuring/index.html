@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>TIL: Default values when destructuring (ES6) | Yoyo developers blog</title>
+
+		
+		<meta name="description" content="Insight from the Yoyo development team.">
+		
+	</head>
+
+	<body>
+		<header>
+			<p>
+				<a href="https://yoyodesign.github.io/developersblog/">Yoyo developers blog</a>
+			</p>
+		</header>
+
+		<main>
+			<h1>TIL: Default values when destructuring (ES6)</h1>
+
+<p>
+	<small>
+		2018-11-12
+	</small>
+</p>
+
+
+
+<p>Today I learnt that you can specify default values when destructuring arrays or objects.</p>
+
+<p>I&rsquo;ve been using desctructuring for a short time now, often using it to create variables from comma-separated values in strings.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;calvin,mark,davis&#34;</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>);
+<span style="color:#66d9ef">const</span> [ <span style="color:#a6e22e">first</span>, <span style="color:#a6e22e">middle</span>, <span style="color:#a6e22e">last</span> ] <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>;
+
+<span style="color:#75715e">// first = &#34;calvin&#34;
+</span><span style="color:#75715e">// middle = &#34;mark&#34;
+</span><span style="color:#75715e">// last = &#34;davis&#34;
+</span><span style="color:#75715e"></span></code></pre></div>
+
+<p>One day it occured to me that because this is variable assignment, perhaps default values would work here. One quick Google later, and here you have it:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;calvin,mark&#34;</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>);
+<span style="color:#66d9ef">const</span> [ <span style="color:#a6e22e">first</span>, <span style="color:#a6e22e">middle</span>, <span style="color:#a6e22e">last</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;(unknown)&#34;</span> ] <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>;
+
+<span style="color:#75715e">// first = &#34;calvin&#34;
+</span><span style="color:#75715e">// middle = &#34;mark&#34;
+</span><span style="color:#75715e">// last = &#34;(unknown)&#34;
+</span><span style="color:#75715e"></span></code></pre></div>
+
+<p>Brilliant right? One little &ldquo;gotcha&rdquo; is that default values are only used when the supplied value is <code>undefined</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;calvin,mark,&#34;</span>; <span style="color:#75715e">// Note the trailing comma!
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>); <span style="color:#75715e">// arr = [ &#34;calvin&#34;, &#34;mark&#34;, &#34;&#34; ] (Note the empty string!)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> [ <span style="color:#a6e22e">first</span>, <span style="color:#a6e22e">middle</span>, <span style="color:#a6e22e">last</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;(unknown)&#34;</span> ] <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>;
+
+<span style="color:#75715e">// first = &#34;calvin&#34;
+</span><span style="color:#75715e">// middle = &#34;mark&#34;
+</span><span style="color:#75715e">// last = &#34;&#34; (Uh oh!)
+</span><span style="color:#75715e"></span></code></pre></div>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ol>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Default_values">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Default_values</a></li>
+</ol>
+
+
+
+<div>
+	<h2>Author(s)</h2>
+
+	<ul>
+		
+		
+		<li>
+			<p>
+				<a href="https://yoyodesign.github.io/developersblog/authors/calvin-davis/">Calvin Davis</a>
+
+				
+				<br />
+				<small>Head of Development</small>
+				
+
+				
+			</p>
+		</li>
+		
+		
+	</ul>
+</div>
+
+
+		</main>
+	</body>
+</html>
