@@ -1,5 +1,5 @@
 ---
-name: "Tom \"Alfie\" Gaskill"
-title: "Developer"
-summary: ""
+name: Tom "Alfie" Gaskill
+title: Developer
+summary:
 ---

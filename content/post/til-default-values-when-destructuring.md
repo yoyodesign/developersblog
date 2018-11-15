@@ -1,16 +1,8 @@
 ---
 title: "TIL: Default values when destructuring (ES6)"
 date: 2018-11-12T16:29:34Z
-publishdate: 2018-11-12
-lastmod: 2018-11-12
-draft: true
 authors:
   - calvin-davis
-categories:
-  - TIL
-tags:
-  - JavaScript
-  - ECMAScript 6
 ---
 
 Today I learnt that you can specify default values when destructuring arrays or objects.
