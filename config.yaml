@@ -2,7 +2,7 @@ baseURL: https://yoyodesign.github.io/developersblog/
 enableGitInfo: true
 enableRobotsTXT: true
 languageCode: en-gb
-paginate: 2
+paginate: 10
 title: Yoyo developers blog
 theme: yoyo-developers-blog
 
