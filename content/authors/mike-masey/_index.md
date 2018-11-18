@@ -1,5 +1,5 @@
 ---
-name: Mike masey
+name: Mike Masey
 title: Developer
 summary:
 ---
