@@ -7,6 +7,12 @@
 		{{ with $.Site.GetPage (printf "/authors/%s" .) }}
 		<li>
 			<p>
+				{{ with .Params.gravatarHash }}
+				<img src="https://www.gravatar.com/avatar/{{ . }}" alt="" />
+				{{ else }}
+				<img src="https://www.gravatar.com/avatar/{{ md5 .Params.Name }}" alt="" />
+				{{ end }}
+
 				<a href="{{ .Permalink }}">{{ .Params.name }}</a>
 
 				{{ with .Params.title }}
