@@ -8,9 +8,9 @@
 		<li>
 			<p>
 				{{ with .Params.gravatarHash }}
-				<img src="https://www.gravatar.com/avatar/{{ . }}" alt="" />
+				{{ partial "gravatar.html" . }}
 				{{ else }}
-				<img src="https://www.gravatar.com/avatar/{{ md5 .Params.Name }}" alt="" />
+				{{ partial "gravatar.html" (md5 .Params.Name) }}
 				{{ end }}
 
 				<a href="{{ .Permalink }}">{{ .Params.name }}</a>
