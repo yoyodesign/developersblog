@@ -8,17 +8,21 @@
 		{{ with .Site.Params.description }}
 		<meta name="description" content="{{ . }}">
 		{{ end }}
+
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="preload" as="style" onload="this.rel = 'stylesheet';">
 	</head>
 
 	<body>
-		<header>
-			<p>
-				<a href="{{ .Site.Home.Permalink }}">Yoyo developers blog</a>
-			</p>
-		</header>
+		<div class="container p-8">
+			<header>
+				<p>
+					<a href="{{ .Site.Home.Permalink }}">Yoyo developers blog</a>
+				</p>
+			</header>
 
-		<main>
-			{{ block "main" . }}{{ end }}
-		</main>
+			<main>
+				{{ block "main" . }}{{ end }}
+			</main>
+		</div>
 	</body>
 </html>
