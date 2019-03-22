@@ -1,0 +1,29 @@
+{
+	"name": "yoyo-developer-blog",
+	"version": "0.0.1",
+	"description": "Insight from the Yoyo development team.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yoyodesign/developersblog.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/yoyodesign/developersblog/issues"
+	},
+	"homepage": "https://github.com/yoyodesign/developersblog#readme",
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^7.5.2",
+		"husky": "^1.3.1"
+	},
+	"dependencies": {}
+}
